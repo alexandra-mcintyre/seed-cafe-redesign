@@ -1,0 +1,514 @@
+/* General Styles */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: initial;
+}
+
+
+body {
+    background: #FDE9EA;
+    overflow-x: hidden;
+}
+
+
+
+
+/* Header */
+header {
+    background: #C8E4BF;
+    height: 149px;
+    width: auto;
+    margin-bottom: 17px;
+}
+
+
+
+h1 {
+    color: #588061;
+    font-family: "Inria Serif";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+h2{
+    color: #588061;
+    text-align: center;
+    font-family: "Inria Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3{
+    color: #75532D;
+    font-family: "Inria Sans";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* left and right aligned elements */
+  align-items: flex-end;          /* bottom alignment */
+  height: 149px;               /* or whatever height you need */
+  background-color: #C8E4BF;;   /* just for visibility */
+  margin-bottom: 15px;
+}
+
+.logo{
+    position: relative;
+    top: 10px;
+    left: -10px;
+}
+
+.top-header {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  align-items: flex-end;
+}
+
+.top-right-header {
+  display: flex;
+  align-items: flex-end; /* make sure it's also bottom-aligned */
+  margin-bottom: 10px;
+  margin-right: 23px;
+}
+
+.top-header a {
+  color: #4F6542;
+  font-family: "Inria Serif";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none; /* ← Optional: ensures no underline by default */
+  padding: 10px; /* ← Optional: adds spacing around each item */
+}
+
+
+.top-header a:hover {
+  text-decoration: underline;
+}
+
+
+.top-header li:last-of-type a {
+    border-bottom: none;
+}
+
+img{
+    width: 154.311px;
+    height: 155px;
+    margin-bottom: 0;
+}
+
+.icon{
+    width: 45px;
+    height: 45px;
+}
+
+.chevron{
+    width: 20.481px;
+    height: 21px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+.chevron img:hover{
+    
+}
+
+.cafe-interior{
+    width: 610px;
+    height: 415px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #4F6542;
+}
+
+
+.specials-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: anchor-center;
+    margin-left: 50px;
+}
+
+.menu-container{
+    margin-top: 25px;
+    margin-bottom: 90px;
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    align-self: center;
+    width: 1031px;
+    max-width: calc(100vw - 70px);
+    height: 440px;
+    flex-shrink: auto;
+    border: 3px solid #75532D;
+    background: #FFF;
+    margin-left: auto;
+    margin-right:auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* 2 equal rows */
+    gap: 0px; /* Optional: Add spacing between grid items */
+}
+
+h4{
+    color: #4F6542;
+    font-family: "Inria Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    margin-left: 40px;
+    margin-top:20px;
+}
+
+.drink-desc{
+    color: #000;
+    font-family: "Inria Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 350px;
+    text-decoration-line: none;
+    margin-top: auto;
+}
+
+.drink-price{
+    color: #000;
+    font-family: "Inria Sans";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 27px;
+    text-decoration-line: none;
+    margin-top: auto;
+}
+
+.bottom-container{
+    width: auto;
+    height: 205px;
+    flex-shrink: 0;
+    background: #588061;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h5{
+    color: #FFF;
+    font-family: "Inria Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.layer-under {
+  display: flex;
+  align-items: center; /* make sure it's also bottom-aligned */
+  margin-bottom: 10px;
+  margin-right: 23px;
+  flex-flow: column wrap;
+  justify-content: center; 
+}
+
+.underneath{
+    color: #FFF;
+    font-family: "Inria Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.in-the-loop{
+    color: #FFF;
+    font-family: "Inria Sans";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.media-icon-box {
+  display: flex;
+  align-items: center; /* make sure it's also bottom-aligned */
+  margin-bottom: 10px;
+  margin-right: 23px;
+}
+
+.media-icon{
+    width: 70px;
+    height: 70px;
+    margin-left: 17px;
+}
+
+.sign-up-button{
+    position: relative; /* this is key! */
+    width: 100px;        /* match the size of your images */
+    height: 100px;
+}
+
+.text-box{
+    position: absolute;
+    top: 10px;
+    left: -95px;
+    width: 242px;
+    height: 40px;
+}
+
+.sign-up{
+    width: 108px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 75px;
+}
+/* .sign-up-button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+} */
+
+
+@media screen and (max-width: 769px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .cafe-interior{
+    width: 585px;
+    height: 398px;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+
+  .drink-desc{
+    font-size: 16px;
+  }
+
+  .drink-price{
+    font-size: 16px;
+  }
+
+   .bottom-container{
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    }
+    
+    .item1 {
+    order: 1;
+    }
+
+    .item2 {
+    order: 3;
+    }
+
+    .item3 {
+    order: 2;
+    }
+
+    .sign-up-button {
+    height: fit-content;
+    margin-bottom:15px;
+  }
+
+  .media-icon{
+    width: 70px;
+    height: 70px;
+    margin-top:8px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 376px) {
+    h1{
+        font-size: 25px;
+    }
+
+    .cafe-interior{
+        width: 260px;
+        height: 177px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .menu-container{
+    margin-top: 15px;
+    margin-bottom: 60px;
+    align-self: center;
+    width: 1031px;
+    max-width: calc(100vw - 70px);
+    height: auto; /* optional: let height expand naturally */
+    flex-shrink: auto;
+    border: 3px solid #75532D;
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr; /* 🟢 ONE column */
+    grid-auto-rows: auto; /* each row fits content size */
+    gap: 0px; /* optional: space between items */
+    }
+
+    h4{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-left:10px;
+    }
+
+    .drink-desc{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .drink-price{
+    font-size: 14px;
+    text-align: right;
+    line-height: unset;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  .logo{
+    width: 91.591px;
+    height: 92px;
+    position: relative;
+    top: 10px;
+    left: -10px;
+    padding:0px;
+    display: block; /* removes extra space below image */
+    margin: 0;
+  }
+
+  .chevron{
+    width: 14px;
+    height: 14px;
+  }
+
+  .top-header a{
+    font-size: 14px;
+  }
+
+  .top-right-header{
+    margin-right: 7px;
+  }
+
+  .icon{
+    width: 21px;
+    height: 22px;
+    margin-right: 2px;
+  }
+
+  .header-container{
+    height: 87px;
+  }
+
+  .bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    }
+    
+    .item1 {
+    order: 2;
+    }
+
+    .item2 {
+    order: 3;
+    }
+
+    .item3 {
+    order: 1;
+    }
+
+  .layer-under{
+    margin-right: 0px;
+  }
+
+  .sign-up-button {
+    height: fit-content;
+    margin-bottom:15px;
+  }
+
+  .specials-container {
+    align-self: center;
+  }
+
+  .top-header a {
+    padding: 3px;
+  }
+
+  .top-header li{
+    padding: 0px;
+    margin-right: 0px;;
+  }
+
+  .media-icon{
+    width: 44.201px;
+    height: 44.201px;
+    margin-top:8px;
+  }
+
+  .in-the-loop{
+    font-size: 16px;
+  }
+
+  h5{
+    font-size: 28px;
+  }
+
+  .underneath{
+    font-size: 17px;
+  }
+
+
+}
